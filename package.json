@@ -1,14 +1,14 @@
 {
-  "name": "sparrow",
-  "version": "2.1.1",
-  "description": "An animated bootstrap 5 theme",
+  "name": "thetax",
+  "version": "1.0.0",
+  "description": "THETA X guru sample site",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "cross-env MODE=PROD gulp build",
     "build:test": "cross-env MODE=PROD gulp build:test",
     "live": "gulp compile:all && cross-env MODE=PROD gulp live",
-    "publish": "git subtree push --prefix public origin gh-pages",
+    "publish": "git subtree push --prefix live/1.0.0 origin gh-pages",
     "publish:force": "cross-var git push origin `git subtree split --prefix live $npm_package_version`:gh-pages --force",
     "publish:f": "git push origin `git subtree split --prefix live main`:gh-pages --force",
     "localhost": "ssh -R 80:localhost:3000 ssh.localhost.run"
